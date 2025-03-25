@@ -9,7 +9,7 @@
         "ecmaVersion": "latest",
         "sourceType": "module"
     },
-    "plugins": ["@typescript-eslint", "eslint-plugin-import-helpers", "prettier"],
+    "plugins": ["@typescript-eslint", "eslint-plugin-import-helpers", "eslint-plugin-unused-imports", "prettier"],
     "rules": {
         "camelcase": "off",
         "import/no-unresolved": "error",
@@ -57,6 +57,7 @@
                 "devDependencies": ["**/*.spec.ts", "vitest.config.ts"]
             }
         ],
+        "unused-imports/no-unused-imports": "warn",
         "prettier/prettier": "error"
     },
     "settings": {
